@@ -11,6 +11,17 @@ Ensure you have the following installed on your system:
 git clone https://github.com/niravpateljoin/mini-ticket-system-task.git
 cd mini-ticket-system-task
 ```
+## Environment Variables
+Ensure you configure the `.env` file in the Laravel backend with the necessary MongoDB connection settings:
+```env
+DB_CONNECTION=mongodb
+DB_HOST=mongodb
+DB_PORT=27017
+DB_DATABASE=your_database
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+DB_URI=mongodb://mongodb:27017/your_database
+```
 
 ### 2. Build and Start the Containers
 ```sh
@@ -39,18 +50,6 @@ This will start all the necessary services, including Laravel API, MongoDB, and 
 | GET    | /api/tickets/{id} | Get ticket details        |
 | PUT    | /api/tickets/{id} | Update a ticket          |
 | DELETE | /api/tickets/{id} | Delete a ticket          |
-
-## Environment Variables
-Ensure you configure the `.env` file in the Laravel backend with the necessary MongoDB connection settings:
-```env
-DB_CONNECTION=mongodb
-DB_HOST=mongodb
-DB_PORT=27017
-DB_DATABASE=your_database
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
-DB_URI=mongodb://mongodb:27017/your_database
-```
 
 ## Stopping the Application
 To stop the running containers, use:
