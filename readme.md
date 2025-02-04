@@ -8,8 +8,8 @@ Ensure you have the following installed on your system:
 
 ### 1. Clone the Repository
 ```sh
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/niravpateljoin/mini-ticket-system-task.git
+cd mini-ticket-system-task
 ```
 
 ### 2. Build and Start the Containers
